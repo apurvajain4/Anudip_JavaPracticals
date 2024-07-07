@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1b29;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #e8a87c;
+}
+
+
+.movie-container {
+    margin-bottom: 20px;
+}
+
+.movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    appearance: none;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.showcase .seat {
+    display: inline-block;
+    width: 18px;  /* Updated width */
+    height: 18px; /* Updated height */
+    background-color: #444451;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.showcase .seat.selected {
+    background-color: #6feaf6;
+}
+
+.showcase .seat.occupied {
+    background-color: #fff;
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.container .screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.seat {
+    background-color: #444451;
+    height: 25px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.seat.selected {
+    background-color: #6feaf6;
+}
+
+.seat.occupied {
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.seat:not(.occupied):hover {
+    background-color: #555;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 16px;
+}
