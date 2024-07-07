@@ -1,1 +1,1 @@
-# Anudip_JavaPracticals
+# Anudip_Practicals
